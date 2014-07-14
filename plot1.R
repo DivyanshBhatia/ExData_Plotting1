@@ -4,4 +4,4 @@ date_vec <- c("1/2/2007","2/2/2007")
 not_required <- c("?")
 new_df <- subset(df,(Date%in%date_vec)&!(Global_active_power%in%not_required))
 new_df
-hist(as.numeric(df$Global_active_power), col="red")
+hist(as.numeric(new_df$Global_active_power), col="red")
